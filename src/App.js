@@ -1,23 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import Contact from './Components/Contact/Contact';
+
 import './App.css';
+
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       
+       
+        <Contact Name ='Stephen Douglas' Avatar='https://randomuser.me/api/portraits/men/40.jpg' Status={true}/>
+        <Contact Name ='Allen Larson' Avatar='https://randomuser.me/api/portraits/men/55.jpg' Status={true}/>
+        <Contact Name ='Sue Rodriguez' Avatar='https://randomuser.me/api/portraits/women/82.jpg' Status={false}/>
+
+      
       </header>
     </div>
   );

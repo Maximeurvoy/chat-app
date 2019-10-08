@@ -4,14 +4,26 @@ import './Contact.css'
 
 const Contact = (props) => {
   return(
-  <div className='Contact'>
-    <img src={props.Avatar} alt="portrait"></img>
+  
+  <div className ='Contact'>
+
+    <img src={props.Avatar} alt="portrait" className='avatar'></img>
+    
     <div>
-      <p>{props.Name}</p>
-      <p>{ props.Status ? 'online' : 'offline'}</p>
+      
+      <p className='name'>{props.Name}</p>
+      
+      <div className="status">
+        <div className={ props.Status ? 'status-online':'status-offline'}></div>
+        <div className='status-text'>{ props.Status ? 'online':'offline'}</div>
+      </div>  
+    
     </div>
+    
+  
   </div>
-    )
+
+  )
 }
 
 export default Contact;

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Contact.css'
-import ContactList from '../ContactList/ContactList'
 
 const Contact = (props) => {
   return(

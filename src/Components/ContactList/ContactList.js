@@ -28,6 +28,7 @@ return(
     return(
       <Contact Name={person.name}
        Status={person.status}
+       
        Avatar={person.avatar}/>
        
     )

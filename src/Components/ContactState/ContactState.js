@@ -9,6 +9,7 @@ class ContactState extends React.Component {
 
     this.state={
       status:props.Status,
+      
     }
   }
 
@@ -16,6 +17,7 @@ class ContactState extends React.Component {
     
     const newstatus = !this.state.status
     this.setState({status: newstatus})
+    
   }
 
 
@@ -28,7 +30,7 @@ class ContactState extends React.Component {
         <p className='name'>{this.props.Name}</p>  
         <div className="status">
           <div onClick={this.event} className={this.state.status?'status-online':'status-offline'}></div>
-          <div className='status-text'>{ this.props.Status ? 'online':'offline'}</div>
+          <div className='status-text'>{ this.state.status ? 'online':'offline'}</div>
         </div>      
       </div>  
     </div>

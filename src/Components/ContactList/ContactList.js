@@ -4,7 +4,7 @@ import ContactState from '../ContactState/ContactState.js'
 
 
 const users=[
-  {name:'Roberto Prescott',
+  {name:'Roberto Pott',
   status:true,
   avatar:'https://randomuser.me/api/portraits/men/32.jpg'},
   {name:'Marcia Kim',

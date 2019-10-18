@@ -1,5 +1,7 @@
 import React from 'react';
 import Contact from '../Contact/Contact'
+import ContactState from '../ContactState/ContactState.js'
+
 
 const users=[
   {name:'Roberto Prescott',
@@ -25,11 +27,18 @@ const ContactList = () =>{
 return(
   users.map((person) => {
     return(
-      <Contact Name={person.name}
+      <div>
+      {/* <Contact Name={person.name}
        Status={person.status}
        
-       Avatar={person.avatar}/>
+       Avatar={person.avatar}/> */}
+      
+      <ContactState Name={person.name}
+       Status={person.status}
        
+       Avatar={person.avatar}
+       />
+       </div>
     )
       
   }    
